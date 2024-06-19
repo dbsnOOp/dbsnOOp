@@ -10,3 +10,8 @@
 * [Install Agent](getting-started/install-agent/README.md)
   * [Docker Agent](getting-started/install-agent/docker-agent.md)
   * [Windows Agent](getting-started/install-agent/windows-agent.md)
+
+## Useful links
+
+* [Official Site](https://dbsnoop.com/)
+* [Youtube](https://www.youtube.com/channel/UC4qXG20VFxfKDb\_Oa55c2fA)
