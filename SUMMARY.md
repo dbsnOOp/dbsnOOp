@@ -7,9 +7,16 @@
 ## Getting Started
 
 * [Introduction](getting-started/introduction.md)
+* [Glossary](getting-started/glossary.md)
 * [Install Agent](getting-started/install-agent/README.md)
-  * [Docker Agent](getting-started/install-agent/docker-agent.md)
-  * [Windows Agent](getting-started/install-agent/windows-agent.md)
+  * [Docker Agent (Standard)](getting-started/install-agent/docker-agent-standard.md)
+  * [Windows Agent (Local)](getting-started/install-agent/windows-agent-local.md)
+* [Install Service](getting-started/install-service.md)
+
+## Using dbsnOOp
+
+* [Cockpit](using-dbsnoop/cockpit.md)
+* [Copilot](using-dbsnoop/copilot.md)
 
 ## Useful links
 
