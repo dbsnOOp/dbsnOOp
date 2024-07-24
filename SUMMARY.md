@@ -17,6 +17,12 @@
 
 * [Cockpit](using-dbsnoop/cockpit.md)
 * [Copilot](using-dbsnoop/copilot.md)
+* [Autopilot](using-dbsnoop/autopilot.md)
+* [Infrastructure](using-dbsnoop/infrastructure.md)
+* [DBA Toolkit](using-dbsnoop/dba-toolkit.md)
+* [Flashback](using-dbsnoop/flashback.md)
+* [Security](using-dbsnoop/security.md)
+* [Management](using-dbsnoop/management.md)
 
 ## Useful links
 
