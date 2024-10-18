@@ -61,3 +61,38 @@ mysql - 77 - (Executions 102)
 linux - 46 - (Executions 76)
 ```
 
+### Troubleshooting
+
+#### Container keeps restarting/dbsnOOp doesn't identify the agent 
+
+***Warning!** All examples shown below use the default container name our setup wizard gives, which is **dbsnoop_agent**. If you changed your container name in the installation, please alter the following steps using your defined container name.*
+
+If you try to install the agent via docker and either the container keeps restarting, or dbsnOOp doesn't identify the new agent, it could be an issue with docker permissions. You can identify that with the following code:
+
+```
+root@server:~# docker logs dbsnoop_agent
+[...]
+00:00:06 INFO      [Agent] Validating Agent Configuration
+00:00:06 INFO      [Agent] Registering Agent
+00:00:06 ERROR     [Agent] cURL error 6: getaddrinfo() thread failed to start (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://poo
+[...]
+```
+
+Another way you can diagnose this error is through our own stats script, as appointed above. The output should be similar to this:
+
+```
+Error response from daemon: Container <container_id> is restarting, wait until the container is running
+```
+
+In this case, you can try to remove the container, and add the `--security-opt seccomp=unconfined` flag to raise the permissions granted to the container. This flag should be add right after the container name, and before the `--restart always` flag, as shown below:
+
+```
+docker run -d --name dbsnoop_agent --security-opt seccomp=unconfined --restart always -e "SNOOP_API=<DBSNOOP_API>" -e "SNOOP_KEY=<DBSNOOP_AGENT_KEY>" -e "SNOOP_AGENT_NAME=<AGENT_NAME>" dbsnoop/agent
+```
+
+You will need to stop and remove the container before recreating it, which you can do with the following command:
+
+```
+docker stop dbsnoop_agent && docker rm dbsnoop_agent
+```
+
