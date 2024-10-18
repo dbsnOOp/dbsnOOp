@@ -61,9 +61,9 @@ mysql - 77 - (Executions 102)
 linux - 46 - (Executions 76)
 ```
 
-### Troubleshooting
+## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
-#### Container keeps restarting/dbsnOOp doesn't identify the agent 
+### Container keeps restarting/dbsnOOp doesn't identify the agent <a href="#issue001" id="issue001"></a>
 
 ***Warning!** All examples shown below use the default container name our setup wizard gives, which is **dbsnoop_agent**. If you changed your container name in the installation, please alter the following steps using your defined container name.*
 
