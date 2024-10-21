@@ -1,6 +1,6 @@
-# Table of contents
+# Conteúdo
 
-* [Welcome](README.md)
+* [Introdução](README.md)
 * [What's new in version X.X](whats-new-in-version-x.x.md)
 * [Releases Notes](releases-notes.md)
 
