@@ -1,8 +1,0 @@
-# Cockpit
-
-### Overview
-
-### Functions
-
-### Views
-
