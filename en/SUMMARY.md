@@ -11,7 +11,15 @@
 * [Install Agent](getting-started/install-agent/README.md)
   * [Docker Agent (Standard)](getting-started/install-agent/docker-agent-standard.md)
   * [Windows Agent (Local)](getting-started/install-agent/windows-agent-local.md)
-* [Install Service](getting-started/install-service.md)
+* [Install Service](getting-started/install-service/README.md)
+  * [PostgreSQL](getting-started/install-service/postgresql.md)
+  * MySQL 
+  * Microsoft SQL Server
+  * Oracle
+  * DB2
+  * MongoDB
+  * [Linux](getting-started/install-service/linux.md)
+
 
 ## Using dbsnOOp
 
