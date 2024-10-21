@@ -34,7 +34,7 @@ Each model or system may require specific steps, but this entire process is desc
 
 Exemple Docker one-line install command:
 
-```
+```bash
 docker run -d --name dbsnoop_agent --restart always -e "SNOOP_API=<DBSNOOP_API>" -e "SNOOP_KEY=<DBSNOOP_AGENT_KEY>" -e "SNOOP_AGENT_NAME=<AGENT_NAME>" dbsnoop/agent
 ```
 
@@ -86,13 +86,13 @@ Error response from daemon: Container <container_id> is restarting, wait until t
 
 In this case, you can try to remove the container, and add the `--security-opt seccomp=unconfined` flag to raise the permissions granted to the container. This flag should be add right after the container name, and before the `--restart always` flag, as shown below:
 
-```
+```bash
 docker run -d --name dbsnoop_agent --security-opt seccomp=unconfined --restart always -e "SNOOP_API=<DBSNOOP_API>" -e "SNOOP_KEY=<DBSNOOP_AGENT_KEY>" -e "SNOOP_AGENT_NAME=<AGENT_NAME>" dbsnoop/agent
 ```
 
 You will need to stop and remove the container before recreating it, which you can do with the following command:
 
-```
+```bash
 docker stop dbsnoop_agent && docker rm dbsnoop_agent
 ```
 
