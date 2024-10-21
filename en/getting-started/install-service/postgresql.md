@@ -1,4 +1,6 @@
-# PostgreSQL Installation
+# PostgreSQL
+
+------
 
 ## Overview
 
