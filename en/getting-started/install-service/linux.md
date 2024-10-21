@@ -1,5 +1,4 @@
 # Linux
-
 ## Overview
 
 This page will describe the basic features of the Linux service, how to register and what metrics are collected from the technology.

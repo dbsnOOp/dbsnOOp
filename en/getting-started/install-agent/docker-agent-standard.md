@@ -5,9 +5,6 @@ description: >-
 ---
 
 # Docker Agent
-
-***
-
 ## Overhead
 
 General consumption varies according to the number of services coupled to it. On average, a service has an expected consumption of 0.05% of CPU on average and 150 Kb of RAM.

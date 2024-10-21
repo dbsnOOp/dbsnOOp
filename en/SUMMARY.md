@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [What's new in version X.X](whats-new-in-version-x.x.md)
+* [What's new in version X.X](whats-new.md)
 * [Releases Notes](releases-notes.md)
 
 ## Getting Started
